@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/app_name">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="1015dp">
+
+                <EditText
+                    android:id="@+id/CityE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="423dp"
+                    android:ems="10"
+                    android:hint="Ciudad"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ZipCodE" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="42dp"
+                    app:layout_constraintBottom_toTopOf="@+id/txt1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/tec" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="306dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="56dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="218dp"
+                    android:text="Selecciona la empresa"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="O Ingresa los datos soliciatodos para registrar una"
+                    android:textColor="#0B0B0B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.143"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+                <EditText
+                    android:id="@+id/NameE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="419dp"
+                    android:ems="10"
+                    android:hint="Nombre de la empresa"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/GiroE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="412dp"
+                    android:ems="10"
+                    android:hint="Giro de la empresa"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NameE" />
+
+                <EditText
+                    android:id="@+id/DireccionE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="412dp"
+                    android:ems="10"
+                    android:hint="Direccion"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/GiroE" />
+
+                <EditText
+                    android:id="@+id/ColE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="426dp"
+                    android:ems="10"
+                    android:hint="Colonia"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DireccionE" />
+
+                <EditText
+                    android:id="@+id/ZipCodE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="426dp"
+                    android:ems="10"
+                    android:hint="Codigo Postal"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ColE" />
+
+                <EditText
+                    android:id="@+id/TelE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="426dp"
+                    android:ems="10"
+                    android:hint="Teléfono"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CityE" />
+
+                <EditText
+                    android:id="@+id/MisionE"
+                    android:layout_width="273dp"
+                    android:layout_height="142dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="135dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="486dp"
+                    android:hint="Mision de la empresa"
+                    android:textColor="#090909"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TelE" />
+
+                <Button
+                    android:id="@+id/buttonEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="122dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="201dp"
+                    android:text="Siguiente"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/MisionE" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

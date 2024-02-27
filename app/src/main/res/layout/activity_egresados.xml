@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:backgroundTintMode="add"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        tools:context="com.example.chayo.foot_out.Registro">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/tec" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="left"
+            android:text="Nombre"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/n"
+            app:layout_constraintEnd_toStartOf="@+id/n"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="left"
+            android:text="Apellido Paterno"
+            app:layout_constraintBottom_toTopOf="@+id/appat"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/appat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="88dp"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="Apellido Materno"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appat" />
+
+        <EditText
+            android:id="@+id/amat"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="250dp"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/group"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="left"
+            android:text="Sexo"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/txt8"
+            app:layout_constraintEnd_toStartOf="@+id/group"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="99dp"
+            android:gravity="left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amat">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="26dp"
+                android:baselineAligned="false"
+                android:gravity="left"
+                android:text="Femenino"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/n" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="24dp"
+                android:gravity="left"
+                android:text="Masculino"
+                app:layout_constraintStart_toEndOf="@+id/rb1"
+                app:layout_constraintTop_toBottomOf="@+id/fechna" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="left"
+            android:text="Matricula"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/matricula"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/matricula"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/txt13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt8"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:text="Ingresa una contraseña "
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/pass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matricula" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="152dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="1dp"
+            android:background="#3366CC"
+            android:onClick="onClick"
+            android:text="Enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carrera" />
+
+        <Spinner
+            android:id="@+id/carrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="77dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/carrera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt13" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

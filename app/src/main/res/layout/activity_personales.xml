@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1015dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/txt1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/tec" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="218dp"
+                    android:text="Ingresa los siguientes datos personales:"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <EditText
+                    android:id="@+id/emailEst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginEnd="419dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.476"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="142dp" />
+
+                <EditText
+                    android:id="@+id/CityEst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="412dp"
+                    android:ems="10"
+                    android:hint="Ciudad"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.479"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/direccEst" />
+
+                <EditText
+                    android:id="@+id/direccEst"
+                    android:layout_width="344dp"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Dirección"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="271dp" />
+
+                <EditText
+                    android:id="@+id/celEst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="412dp"
+                    android:ems="10"
+                    android:hint="Celular"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.473"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailEst" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupEst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="28dp"
+                    app:layout_constraintEnd_toStartOf="@+id/OT_NSS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="405dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMSS" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonIS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ISSSTE" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otro" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/OT_NSS"
+                    android:layout_width="272dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="6dp"
+                    android:ems="10"
+                    android:hint="Ingresa el tipo de "
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NSS_Est"
+                    tools:hint="Ingresa el nombre de tu seguridad social" />
+
+                <EditText
+                    android:id="@+id/NSS_Est"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="68dp"
+                    android:ems="10"
+                    android:hint="Numero de seguridad"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/radioGroupEst"
+                    app:layout_constraintTop_toBottomOf="@+id/CityEst" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

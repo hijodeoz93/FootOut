@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".servicio">
+
+    <TextView
+        android:id="@+id/txt1"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Servicio social "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="152dp"
+        android:layout_height="77dp"
+        android:onClick="download"
+        android:text="Descargar documentación "
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:text="Recuerda que necesitas \n contar con los siguientes aspectos:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="° Contar con 70% de la reticula acreditada\n
+ ° Contar con todos los creditos complementarios \n
+ ° Estar inscrito en el semestre en curso"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="55dp"
+        android:text="Procedimiento para Servicio Social "
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+</android.support.constraint.ConstraintLayout>

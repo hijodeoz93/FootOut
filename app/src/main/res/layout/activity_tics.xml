@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loboss"
+    tools:context="com.example.chayo.foot_out.tics">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt1"
+            style="@android:style/Widget.DeviceDefault.Light.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="48dp"
+            android:text="BIENVENIDO"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            style="@android:style/Widget.DeviceDefault.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="134dp"
+            android:text='"nombre"'
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn"
+            style="@android:style/Widget.Holo.Light.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="216dp"
+            android:background="#3366CC"
+            android:text="Residencias"
+            android:textColor="#EFEBE9" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@android:style/Widget.Holo.Light.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-60dp"
+            android:layout_marginBottom="214dp"
+            android:layout_toEndOf="@+id/txt2"
+            android:background="#3366CC"
+            android:backgroundTint="#3366CC"
+            android:text="Servicio Social"
+            android:textColor="#EFEBE9" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="272dp"
+            android:text="Selecciona una opción"
+            android:textColor="@android:color/background_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
